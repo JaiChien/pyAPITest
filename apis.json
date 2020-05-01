@@ -1,0 +1,61 @@
+
+{
+	"name":"Example api testing",
+	"host":"http://localhost:8080/",
+	"flow":[
+		{
+			"name":"Platfrom web system User ",
+			"type":"CRUD",
+			"list":[
+				{
+					"request":{
+						"method":"DEL",
+						"path":"user",
+						"body":{},
+						"params":{},
+						"headers":{}
+					},
+					"response":{},
+					"resIgnore":[],
+					"update":{}
+				},
+				{
+					"request":{
+						"method":"GET",
+						"path":"user",
+						"body":{},
+						"params":{},
+						"headers":{}
+					},
+					"response":{},
+					"resIgnore":[],
+					"update":{}
+				},
+				{
+					"request":{
+						"method":"POST",
+						"path":"user",
+						"body":{"name":"JaiChien"},
+						"params":{},
+						"headers":{}
+					},
+					"response":{},
+					"resIgnore":[],
+					"update":{}
+				},
+				{
+					"request":{
+						"method":"DEL",
+						"path":"user/1",
+						"body":{},
+						"params":{},
+						"headers":{}
+					},
+					"response":{},
+					"resIgnore":[],
+					"update":{}
+				}
+			]
+		}
+	]
+}
